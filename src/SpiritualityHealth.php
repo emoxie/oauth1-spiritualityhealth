@@ -43,7 +43,7 @@
 		 * @return string
 		 */
 		public function urlUserDetails() {
-			return self::API_URL . "/me/company";
+			return self::API_URL . "/me/customer";
 		}
 
 		/**
