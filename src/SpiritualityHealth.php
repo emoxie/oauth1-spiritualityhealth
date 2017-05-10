@@ -69,12 +69,13 @@
 				return $value;
 			};
 
-			$user->uid         = $arraySearchAndDestroy( $data, 'customer_id' );
-			$user->nickname    = $arraySearchAndDestroy( $data, 'fname' );
-			$user->firstName   = $arraySearchAndDestroy( $data, 'fname' );
-			$user->lastName    = $arraySearchAndDestroy( $data, 'lname' );
+			$user->uid         = trim($arraySearchAndDestroy( $data, 'customer_id' ));
+			$user->firstName   = trim($arraySearchAndDestroy( $data, 'fname' ));
+			$user->lastName    = trim($arraySearchAndDestroy( $data, 'lname' ));
 			$user->name        = $user->firstName . ' ' . $user->lastName;
-			$user->email       = $arraySearchAndDestroy( $data, 'email' );
+			$user->nickname    = $user->firstName;
+			$user->email       = trim($arraySearchAndDestroy( $data, 'email' ));
+
 			$user->location    = [
 				'city'    => '',
 				'state'   => '',
