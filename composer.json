@@ -1,5 +1,5 @@
 {
-    "name": "emoxie/oauth1-spiritualityhealth",
+    "name": "mattpramschufer/oauth1-spiritualityhealth",
     "description": "Spirituality & Health OAuth 1.0 Client Provider for The PHP League OAuth1-Client",
     "license": "MIT",
     "authors": [
@@ -14,8 +14,7 @@
         "oauth1",
         "client",
         "authorization",
-        "authorisation",
-        "Spirituality & Health"
+        "authorisation"
     ],
     "require": {
         "php": ">=5.5.0",
